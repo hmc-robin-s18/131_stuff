@@ -37,10 +37,19 @@ FontSize scalefont setfont
 % Drawing Code
 
 
+gsave
 newpath
-3.0 3.0 moveto
-5.0 5.0 lineto
+(0,0) (mag,0) lineto
 stroke
+newpath
+show (length - hdht) 0.5 moveto
+0 -0.5 rlineto
+0.5 0.25 rlineto
+closepath
+fill
+-0.7853981633974483 rotate
+0.0 2.0 translate
+grestore
 
 
 % Trailer
